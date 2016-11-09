@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LiveViewController">
+            <connections>
+                <outlet property="imageView" destination="zg4-kJ-ZMd" id="Fvw-w3-R0h"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Fvj-ow-a4y"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zg4-kJ-ZMd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="893-H4-jnL">
+                    <rect key="frame" x="317" y="609" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="OSU-yk-vqn"/>
+                        <constraint firstAttribute="height" constant="40" id="kYg-vL-fi0"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_btn_guan_h"/>
+                    <connections>
+                        <action selector="close:" destination="-1" eventType="touchUpInside" id="GbS-bG-dsR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-Yt-8kM">
+                    <rect key="frame" x="259" y="609" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8ie-2y-ubz"/>
+                        <constraint firstAttribute="height" constant="40" id="rPr-tz-9y9"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_btn_fenxiang_h"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smr-Dr-rnO">
+                    <rect key="frame" x="201" y="609" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SJO-0G-2Le"/>
+                        <constraint firstAttribute="height" constant="40" id="nLA-wK-iOp"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_btn_liwu_h"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDq-Gv-dBO">
+                    <rect key="frame" x="143" y="609" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="42h-13-ijj"/>
+                        <constraint firstAttribute="height" constant="40" id="EEy-pR-aQ0"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_btn_xinxi_h"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sr9-59-pcz">
+                    <rect key="frame" x="18" y="609" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1i6-cm-f71"/>
+                        <constraint firstAttribute="width" constant="40" id="hsw-Zi-wQu"/>
+                    </constraints>
+                    <state key="normal" image="mg_room_btn_liao_h"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sr9-59-pcz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="8B5-bH-MLG"/>
+                <constraint firstAttribute="bottom" secondItem="vDq-Gv-dBO" secondAttribute="bottom" constant="18" id="F3k-cO-Er4"/>
+                <constraint firstAttribute="bottom" secondItem="aWd-Yt-8kM" secondAttribute="bottom" constant="18" id="GkW-bg-TG9"/>
+                <constraint firstItem="Smr-Dr-rnO" firstAttribute="leading" secondItem="vDq-Gv-dBO" secondAttribute="trailing" constant="18" id="Ksy-XL-FUj"/>
+                <constraint firstAttribute="trailing" secondItem="zg4-kJ-ZMd" secondAttribute="trailing" id="PiV-lg-kCj"/>
+                <constraint firstAttribute="trailing" secondItem="893-H4-jnL" secondAttribute="trailing" constant="18" id="QUt-0A-0fo"/>
+                <constraint firstAttribute="bottom" secondItem="Sr9-59-pcz" secondAttribute="bottom" constant="18" id="UQM-VK-3Yw"/>
+                <constraint firstItem="zg4-kJ-ZMd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Unm-No-4po"/>
+                <constraint firstItem="zg4-kJ-ZMd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bFf-uj-KRB"/>
+                <constraint firstAttribute="bottom" secondItem="893-H4-jnL" secondAttribute="bottom" constant="18" id="dNJ-OJ-m0F"/>
+                <constraint firstAttribute="bottom" secondItem="zg4-kJ-ZMd" secondAttribute="bottom" id="lgr-bF-mOE"/>
+                <constraint firstAttribute="bottom" secondItem="Smr-Dr-rnO" secondAttribute="bottom" constant="18" id="nrt-qC-u0Q"/>
+                <constraint firstItem="aWd-Yt-8kM" firstAttribute="leading" secondItem="Smr-Dr-rnO" secondAttribute="trailing" constant="18" id="odz-Wn-qwH"/>
+                <constraint firstItem="893-H4-jnL" firstAttribute="leading" secondItem="aWd-Yt-8kM" secondAttribute="trailing" constant="18" id="r7t-eG-XFw"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="mg_room_btn_fenxiang_h" width="40" height="40"/>
+        <image name="mg_room_btn_guan_h" width="40" height="40"/>
+        <image name="mg_room_btn_liao_h" width="40" height="40"/>
+        <image name="mg_room_btn_liwu_h" width="40" height="40"/>
+        <image name="mg_room_btn_xinxi_h" width="40" height="40"/>
+    </resources>
+</document>
